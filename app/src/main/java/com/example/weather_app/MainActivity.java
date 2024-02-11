@@ -32,11 +32,6 @@ import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Locale;
 
-/*
-private static final String BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
-private static final String API_KEY = "d3c8c11f22a6c8f2c156965e798fb582";
-*/
-
 public class MainActivity extends AppCompatActivity {
 
     LottieAnimationView lottieAnimationView;
@@ -125,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void getWeather(String city) {
         final String BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
-        final String API_KEY = "d3c8c11f22a6c8f2c156965e798fb582";
+        final String API_KEY = "YOUR_API_KEY";
 
         String urlString = BASE_URL + "?q=" + city + "&appid=" + API_KEY + "&units=metric";
 
